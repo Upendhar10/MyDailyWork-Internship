@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+@font-face {
+  font-family: artega;
+  src: url("../assets/Artega.otf");
+}
+
+/* Global styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "artega", "Helvetica Neue", Helvetica, Arial;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Default styling  */
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+h2 {
+  color: green;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background: green;
+  color: white;
+  border: 1px solid black;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  border: 1px solid green;
+  color: green;
+  background: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  max-width: 1100px;
+  margin: 1rem auto;
+}
+
+.header .navlinks {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  color: black;
+  cursor: pointer;
+}
+
+.header .menu {
+  display: none;
+}
+
+/* Hero-section */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  line-height: 2;
+  padding-inline: 1rem;
+}
+
+.hero span {
+  color: #008000;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.hero .btn {
+  margin-block: 1.2rem;
+}
+
+.hero-image {
+  width: 90%;
+  min-width: 400px;
+  min-height: 250px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+/* Slider */
+
+.slider {
+  width: 95%;
+  height: 75px;
+  position: relative;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+.slide {
+  animation: slideshow 20s linear infinite;
+}
+
+.slide p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-style: italic;
+  gap: 4rem;
+  text-align: center;
+}
+
+.slider::before,
+.slider::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+/* About section */
+
+.about {
+  width: 95%;
+  text-align: center;
+  list-style-type: none;
+  line-height: 2.2;
+  margin-block: 4rem;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+}
+
+.mission-vision {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.mission-vision h3 {
+  color: green;
+}
+
+.mission,
+.vision {
+  max-width: 450px;
+  min-width: 300px;
+  min-height: 350px;
+  border: 2px solid black;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 50%;
+  box-shadow: 10px 10px 0px black;
+  line-height: 2;
+}
+
+.interships {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.interships .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  line-height: 2;
+}
+
+.interships span {
+  color: green;
+}
+
+.interships .goodies {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-block: 2rem;
+}
+
+.goodies .box {
+  width: 30%;
+  min-height: 50%;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: -10px -10px 0px gray;
+  overflow: hidden;
+}
+
+.box img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 0;
+  line-height: 2;
+  font-size: 0.8rem;
+}
+
+.footer .part-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 2rem auto;
+}
+
+.footer .part-1 .socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+.footer .part-1 .verified img {
+  width: 100px;
+}
+
+/* Animations */
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Media queries */
+
+@media screen and (max-width: 800px) {
+  .header {
+    justify-content: space-around;
+  }
+  .header .navlinks {
+    display: none;
+  }
+
+  .header .menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .mission-vision {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
