@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cont">
+      <input type="text" id="display" readonly />
+      <div class="btns">
+        <div id="row1">
+          <button onclick="display.value = '' ">AC</button>
+          <button
+            onclick="display.value = display.value.toString().slice(0,-1) "
+          >
+            DEL
+          </button>
+          <button onclick="display.value += '%' ">%</button>
+          <button onclick="display.value += '/' ">/</button>
+        </div>
+        <div id="row2">
+          <button onclick="display.value += '7'" class="number">7</button>
+          <button onclick="display.value += '8'" class="number">8</button>
+          <button onclick="display.value += '9'" class="number">9</button>
+          <button onclick="display.value += '*' ">x</button>
+        </div>
+        <div id="row3">
+          <button onclick="display.value += '4'" class="number">4</button>
+          <button onclick="display.value += '5'" class="number">5</button>
+          <button onclick="display.value += '6'" class="number">6</button>
+          <button onclick="display.value += '-' ">-</button>
+        </div>
+        <div id="row4">
+          <button onclick="display.value += '1'" class="number">1</button>
+          <button onclick="display.value += '2'" class="number">2</button>
+          <button onclick="display.value += '3'" class="number">3</button>
+          <button onclick="display.value += '+' ">+</button>
+        </div>
+        <div id="row5">
+          <button onclick="display.value += '0'" class="number">0</button>
+          <button onclick="display.value += '.'" class="number">.</button>
+          <button onclick="display.value += '00'" class="number">00</button>
+          <button onclick="display.value = eval(display.value)" class="equals">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
