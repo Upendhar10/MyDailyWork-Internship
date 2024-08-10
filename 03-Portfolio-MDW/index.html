@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO - MyDailyWork</title>
+    <!-- fontawsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="w-5/6 mx-auto">
+      <header
+        class="flex py-8 justify-between items-center sticky top-0 left-0 bg-[#f1f2f6]"
+      >
+        <a href="/"
+          ><h1 class="text-3xl font-extrabold">WebDevInternship</h1></a
+        >
+        <nav>
+          <i
+            class="fa-solid fa-bars font-extrabold text-2xl px-2 py-1 hover:bg-black hover:text-white rounded-sm md:hidden"
+          ></i>
+          <ul
+            class="navlinks md:flex gap-10 items-center text-[1.2rem] font-semibold hidden"
+          >
+            <li><a href="#hero" class="hover:text-green-500">Home</a></li>
+            <li><a href="#about" class="hover:text-green-500">About</a></li>
+            <li>
+              <a href="#projects" class="hover:text-green-500">Projects</a>
+            </li>
+            <li>
+              <a
+                href="#connect"
+                class="border p-3 border-black rounded hover:bg-green-500"
+                >Connect</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section
+        id="hero"
+        class="flex justify-around md:flex-nowrap my-10 flex-wrap gap-3"
+      >
+        <div class="text-center inline-block">
+          <img
+            src="./assets/hero.jpg"
+            alt=""
+            class="h-[35vw] min-h-[500px] rounded-3xl"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-5 justify-center items-start md:w-3/6 w-full"
+        >
+          <span class="text-xl text-slate-400">Hello👋 I'm</span>
+          <h2 class="text-3xl font-bold">Nemmani Upendhar</h2>
+          <h3 class="text-2xl font-semibold">Software Engineer</h3>
+          <p class="text-xl leading-8 text-justify">
+            I'm passionate about creating user-friendly web experiences, with a strong focus on the visual and interactive parts of websites. I have a knack for making designs come to life and ensuring everything works smoothly over time. I enjoy collaborating with others, finding creative solutions to challenges, and staying organized to get things done on time.
+          In my free time, I love playing cricket and badminton.
+          </p>
+          <div class="text-4xl cursor-pointer">
+            <a
+              href="https://upendhar-nemmani-dev.web.app/"
+              target="_blank"
+              class="hover:transition-all mr-4"
+            >
+              <i
+                class="fa-solid fa-web-awesome hover:text-green-500 mr-4"
+                title="portfolio"
+              ></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/upendharnemmani"
+              target="_blank"
+              class="hover:transition-all mr-4"
+            >
+              <i
+                class="fa-brands fa-linkedin mr-4 hover:text-green-500"
+              ></i>
+            </a>
+            <a
+              href="https://github.com/Upendhar10"
+              target="_blank"
+              class="hover:transition-all"
+            >
+              <i
+                class="fa-brands fa-square-github hover:text-green-500 mr-4"
+              ></i>
+            </a>
+          </div>
+          <div>
+            <h3 class="text-2xl mb-4 font-bold">Techstack :</h3>
+            <div class="flex gap-4 flex-wrap">
+              <img class="h-10" src="https://skillicons.dev/icons?i=js" />
+              <img class="h-10" src="https://skillicons.dev/icons?i=html" />
+              <img class="h-10" src="https://skillicons.dev/icons?i=css" />
+              <img class="h-10" src="https://skillicons.dev/icons?i=react" />
+              <img class="h-10" src="https://skillicons.dev/icons?i=tailwind" />
+              <img class="h-10" src="https://skillicons.dev/icons?i=mongodb" />
+              <img class="h-10" src="https://skillicons.dev/icons?i=git" />
+              <img class="h-10" src="https://skillicons.dev/icons?i=github" />
+              <img class="h-10" src="https://skillicons.dev/icons?i=nodejs" />
+              <img class="h-10" src="https://skillicons.dev/icons?i=postman" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h2
+          class="text-3xl font-bold my-5 border p-3 border-black rounded w-fit"
+        >
+          About Internship
+        </h2>
+        <div">
+          <div class="text-xl my-5">
+            <p>Role: Web Development Internship</p>
+            <p>Duration: 4 Weeks</p>
+          </div>
+        </div>
+
+        <p class="text-xl leading-9 indent-20 text-justify">
+          This internship from MyDailyWork, offers a fantastic opportunity for
+          individuals eager to learn, develop new skills, and gain hands-on
+          experience in the field of web development. Over the course of four
+          weeks, you will be immersed in a dynamic learning environment designed
+          to enhance your technical abilities and professional growth.
+        </p>
+        <ul class="text-xl leading-9 text-justify list-inside list-disc mt-2">
+          <li>
+            <b>Skill Development:</b>
+            Enhance your coding skills, problem-solving abilities, and
+            understanding of web development frameworks.
+          </li>
+          <li>
+            <b>Hands-On Experience:</b>
+            Work on real-world projects that will challenge you and prepare you
+            for a career in web development.
+          </li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h2
+          class="text-3xl font-bold my-5 border p-3 border-black rounded w-fit"
+        >
+          My Learnings
+        </h2>
+        <p class="text-xl leading-9 indent-20 text-justify">
+          During the course of this internship, I had the opportunity to work on
+          five diverse projects (including this portfolio), each contributing to
+          my growth as a web developer. Here's an overview of what I learned and
+          achieved.
+        </p>
+        <section
+          class="flex gap-5 flex-wrap min-w[250px] justify-evenly items-center mt-5 leading-relaxed bg-[#f1f2f6]"
+        >
+          <div class="border-4 w-[500px] text-xl rounded-lg overflow-hidden hover:shadow-xl">
+            <img
+              src="./assets/MDW-landingpage.png"
+              alt="img"
+              class="bg-red-200 h-[250px]"
+            />
+            <div class="p-3 leading-relaxed">
+              <h3 class="font-semibold">
+                Redesigned Landing Page for MyDailyWork
+              </h3>
+              <p>Technologies Used: HTML, CSS</p>
+              <ul class="list-disc list-inside text-lg">
+                <li>
+                  Improved my understanding of responsive design principles.
+                </li>
+                <li>
+                  Gained experience in HTML and CSS to create visually appealing
+                  and user-friendly layouts.
+                </li>
+              </ul>
+              <div class="flex justify-evenly cursor-pointer text-3xl">
+                <a
+                  href="https://github.com/Upendhar10/MyDailyWork-Internship/tree/main/01-Landing-page"
+                  target="_blank"
+                  ><i class="fa-brands fa-github hover:text-green-500"></i
+                ></a>
+                <a
+                  href="https://github.com/Upendhar10/MyDailyWork-Internship/blob/main/01-Landing-page/readme.md"
+                  target="_blank"
+                  ><i class="fa-solid fa-link hover:text-green-500"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="border-4 w-[500px] text-xl rounded-lg overflow-hidden hover:shadow-xl">
+            <img
+              src="./assets/calculator.png"
+              alt="img"
+              class="bg-red-200 h-[250px] object-center w-[100%]"
+            />
+            <div class="p-3 leading-relaxed">
+              <h3 class="font-semibold">Simple Calculator App</h3>
+              <p>Technologies Used: HTML, CSS, JS</p>
+              <ul class="list-disc list-inside text-lg">
+                <li>
+                  Enhanced my JavaScript skills by implementing core
+                  functionalities of a calculator.
+                </li>
+                <li>
+                  Gained experience in DOM manipulation and event handling.
+                </li>
+              </ul>
+              <div class="flex justify-evenly cursor-pointer text-3xl">
+                <a
+                  href="https://github.com/Upendhar10/MyDailyWork-Internship/tree/main/02-Calculator"
+                  target="_blank"
+                  ><i class="fa-brands fa-github hover:text-green-500"></i
+                ></a>
+                <a
+                  href="https://github.com/Upendhar10/MyDailyWork-Internship/blob/main/02-Calculator/readme.md"
+                  target="_blank"
+                  ><i class="fa-solid fa-link hover:text-green-500"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="border-4 w-[500px] text-xl rounded-lg overflow-hidden hover:shadow-xl">
+            <img
+              src="./assets/QuizQuest.png"
+              alt="img"
+              class="bg-red-200 h-[250px]"
+            />
+            <div class="p-3 leading-relaxed">
+              <h3 class="font-semibold">
+                QuizQuest - Full Stack Quiz Application
+              </h3>
+              <p>
+                Technologies Used: MERN Stack (MongoDB, Express.js, React,
+                Node.js), Tailwind CSS
+              </p>
+              <ul class="list-disc list-inside text-lg">
+                <li>
+                  Developed a complete full stack application, deepening my
+                  understanding of the MERN stack.
+                </li>
+                <li>
+                  Learned to integrate backend with frontend and manage state
+                  effectively in a React application.
+                </li>
+                <li>
+                  Used Tailwind CSS for styling, which improved my ability to
+                  create modern and responsive designs quickly.
+                </li>
+              </ul>
+              <div class="flex justify-evenly cursor-pointer text-3xl">
+                <i class="fa-brands fa-github hover:text-green-500"></i>
+                <i class="fa-solid fa-link hover:text-green-500"></i>
+              </div>
+            </div>
+          </div>
+          <div class="border-4 w-[500px] text-xl rounded-lg overflow-hidden hover:shadow-xl">
+            <img
+              src="./assets/QuikHire.png"
+              alt="img"
+              class="bg-red-200 h-[250px]"
+            />
+            <div class="p-3 leading-relaxed">
+              <h3 class="font-semibold">
+                QuikHire-Full Stack Job-Portal Application
+              </h3>
+              <p>
+                Technologies Used:MERN Stack (MongoDB, Express.js, React,
+                Node.js), Tailwind CSS
+              </p>
+              <ul class="list-disc list-inside text-lg">
+                <li>
+                  Gained hands-on experience in building a full-featured job
+                  portal.
+                </li>
+                <li>
+                  Improved my backend development skills, particularly in
+                  handling complex data structures and RESTful APIs.
+                </li>
+                <li>
+                  Strengthened my frontend development skills using React and
+                  Tailwind CSS.
+                </li>
+              </ul>
+              <div class="flex justify-evenly cursor-pointer text-3xl">
+                <i class="fa-brands fa-github hover:text-green-500"></i>
+                <i class="fa-solid fa-link hover:text-green-500"></i>
+              </div>
+            </div>
+          </div>
+          <!-- overall experience -->
+          <div
+            class="text-xl rounded-lg overflow-hidden leading-9 text-justify"
+          >
+            <h3 class="font-semibold mb-4 text-2xl">
+              Overall Learning Experience:
+            </h3>
+            <ul>
+              <li>
+                <b>Technical Skills:</b>
+                This internship significantly improved my proficiency in web
+                development, particularly in full stack development using the
+                MERN stack, responsive design with Tailwind CSS, and client-side
+                scripting with JavaScript.
+              </li>
+              <li>
+                <b>Project Management:</b>
+                I learned to manage multiple projects simultaneously, ensuring
+                timely completion while maintaining high-quality standards.
+              </li>
+              <li>
+                <b>Problem-Solving:</b>
+                Each project presented unique challenges, which helped me
+                develop strong problem-solving skills and adaptability.
+              </li>
+              <li>
+                <b>Career Growth: </b>
+                The experience gained through these projects has laid a solid
+                foundation for my career in web development, equipping me with
+                the skills and confidence needed to tackle future challenges.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <footer id="connect">
+        <div class="flex flex-col items-center gap-7 my-3">
+          <h2
+            class="text-4xl font-bold my-5 border p-3 border-black rounded w-fit text-start"
+          >
+            Get In Touch
+          </h2>
+          <div class="flex gap-10 justify-center text-4xl">
+            <a
+              href="https://upendhar-nemmani-dev.web.app/"
+              target="_blank"
+              class="hover:transition-all"
+            >
+              <i
+                class="fa-solid fa-web-awesome hover:text-green-500"
+                title="portfolio"
+              ></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/upendharnemmani"
+              target="_blank"
+              class="hover:transition-all"
+            >
+              <i
+                class="fa-brands fa-linkedin mr-4 hover:text-green-500"
+              ></i>
+            </a>
+            <a
+              href="https://github.com/Upendhar10"
+              target="_blank"
+              class="hover:transition-all"
+            >
+              <i
+                class="fa-brands fa-square-github hover:text-green-500 mr-4"
+              ></i>
+            </a>
+            <a
+              href="https://twitter.com/UpendharNemmani"
+              target="_blank"
+              class="hover:transition-all"
+            >
+              <i
+                class="fa-brands fa-twitter mr-4 hover:text-green-500"
+              ></i>
+            </a>
+          </div>
+          <hr class="text-gray-900 w-full" />
+          <div>
+            <p class="copyright mb-2">
+              &#169; Nemmani Upendhar - All rights Reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+</html>
